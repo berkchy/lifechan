@@ -4,7 +4,6 @@ import { getCurrentUser } from "@/lib/auth";
 import LikeButton from "@/components/LikeButton";
 import CommentSection from "@/components/CommentSection";
 
-export const dynamic = "force-dynamic";
 
 export default async function PostDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
